@@ -6,7 +6,7 @@
 /*   By: wsabates <wsabates@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/06 19:39:14 by wsabates          #+#    #+#             */
-/*   Updated: 2018/02/06 19:52:45 by wsabates         ###   ########.fr       */
+/*   Updated: 2018/02/08 16:18:29 by wsabates         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,9 +97,9 @@ int		ft_keyfunc(int keycode, t_var *var)
 		var->draw.fmv += 0.05;
 	if (keycode == 78)
 		var->draw.fmv -= 0.05;
-	if (keycode == 123)
-		var->draw.movex += 0.05;
 	if (keycode == 124)
+		var->draw.movex += 0.05;
+	if (keycode == 123)
 		var->draw.movex -= 0.05;
 	if (keycode == 125)
 		var->draw.movey += 0.05;

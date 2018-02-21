@@ -6,7 +6,7 @@
 /*   By: wsabates <wsabates@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/22 16:36:39 by wsabates          #+#    #+#             */
-/*   Updated: 2018/02/06 20:10:20 by wsabates         ###   ########.fr       */
+/*   Updated: 2018/02/08 16:38:12 by wsabates         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@
 # define WIN_Y 800
 
 # include "../libft/libft.h"
-# include <pthread.h>
-# include "mlx.h"
+# include "../minilibx_macos/mlx.h"
 # include "math.h"
 
 typedef struct		s_window
@@ -38,36 +37,33 @@ typedef struct		s_draw
 	int				color;
 	int				size;
 	int				val;
-	double			x;
-	double			y;
-	double			x1;
-	double			y1;
-	double			x2;
-	double			y2;
+	long double		x;
+	long double		y;
+	long double		x1;
+	long double		y1;
+	long double		x2;
+	long double		y2;
 	int				zoom;
-	double			image_x;
-	double			image_y;
-	double			movex;
-	double			movey;
-	double			z_r;
+	long double		image_x;
+	long double		image_y;
+	long double		movex;
+	long double		movey;
+	long double		z_r;
 	double			z_i;
-	double			c_r;
-	double			c_i;
+	long double		c_r;
+	long double		c_i;
 	int				i;
-	double			stuff;
-	pthread_t		*th;
+	long double		stuff;
 	int				exit;
 	int				type;
-	double			start;
-	double			end;
+	long double		start;
+	long double		end;
 	double			tmp;
 	void			*mlx;
 	void			*win;
 	int				var;
 	int				withfract;
 	int				iteration_max;
-	double			cr;
-	double			ci;
 	int				mouse_x;
 	int				mouse_y;
 	int				var_mouse;
@@ -76,7 +72,7 @@ typedef struct		s_draw
 	int				bpp;
 	int				size_line;
 	int				endian;
-	double			fmv;
+	long double		fmv;
 	int				fract;
 	char			*presst;
 	int				error;
